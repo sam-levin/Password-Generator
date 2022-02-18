@@ -20,10 +20,10 @@ function writePassword() {
   //var pword = [];
 
   // These next four lines let the user input what types of characters they want in their password
-  var ynnumbers = window.confirm("Would you like to use numbers in this password? Enter Y or y for yes, and N or n for no");
-  var ynlower = window.confirm("Would you like to use lowercase letters in this password? Enter Y or y for yes, and N or n for no");
-  var ynuppercase = window.confirm("Would you like to use uppercase letters in this password? Enter Y or y for yes, and N or n for no");
-  var ynchar = window.confirm("Would you like to use special characters in this password? Enter Y or y for yes, and N or n for no");
+  var ynnumbers = window.confirm("Would you like to use numbers in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+  var ynlower = window.confirm("Would you like to use lowercase letters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+  var ynuppercase = window.confirm("Would you like to use uppercase letters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+  var ynchar = window.confirm("Would you like to use special characters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
 
   var validationarray = [];
 
@@ -50,10 +50,10 @@ function writePassword() {
 
   while (!(validationarray.includes("True"))) {
     window.alert("You must have at least one character type")
-    var ynnumbers = window.confirm("Would you like to use numbers in this password? Enter Y or y for yes, and N or n for no");
-    var ynlower = window.confirm("Would you like to use lowercase letters in this password? Enter Y or y for yes, and N or n for no");
-    var ynchar = window.confirm("Would you like to use special characters in this password? Enter Y or y for yes, and N or n for no");
-    var ynuppercase = window.confirm("Would you like to use uppercase letters in this password? Enter Y or y for yes, and N or n for no");
+    var ynnumbers = window.confirm("Would you like to use numbers in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+    var ynlower = window.confirm("Would you like to use lowercase letters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+    var ynchar = window.confirm("Would you like to use special characters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
+    var ynuppercase = window.confirm("Would you like to use uppercase letters in this password? Press the Enter button for Yes, or press the Cancel Button for No.");
 
     if (ynnumbers === true) {
       possible_char.push(nums);
